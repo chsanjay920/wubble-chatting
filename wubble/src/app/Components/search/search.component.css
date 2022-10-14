@@ -1,0 +1,6 @@
+.form-control:focus {
+    border-color: #ee98c1;
+    box-shadow: 0 0 0 0.2rem #e75f99;
+    color: #e75f99;
+    font-weight: bold;
+} 

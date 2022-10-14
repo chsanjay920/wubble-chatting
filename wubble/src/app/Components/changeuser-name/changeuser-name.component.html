@@ -1,0 +1,24 @@
+<div class="container row">
+    <div class="col-9 username align-baseline">{{username}}</div>
+    <div [ngStyle]="{'background-color':'#e75f99','border':'pink'}" (click)="toggleForm()" class="col-3 btn btn-primary text-center">
+        <fa-icon *ngIf="!formshow" [icon]="userpen"></fa-icon>
+        <fa-icon *ngIf="formshow"  [icon]="close" ></fa-icon>
+    </div>
+    <div *ngIf="formshow" class="editnameform">
+        <div class="mt-2 mx-0">
+            <div  class="row gx-1">
+                <div class="col-10">
+                    <input type="text" class="form-control usernamechange" id="username" placeholder="new username" [(ngModel)]="newName">
+                </div>
+                <div class="col-2">
+                    <button [ngStyle]="{'background-color':'#e75f99','border':'pink','padding':'1'}" type="button" class="btn btn-primary" (click)="getRandomName()">
+                        <fa-icon [icon]="spark" ></fa-icon>
+                    </button>
+                </div>
+            </div>
+            <div  class="text-center m-2">
+                <button [ngStyle]="{'background-color':'#e75f99','border':'pink'}" type="button" class="btn btn-primary" (click)="changeusername()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>

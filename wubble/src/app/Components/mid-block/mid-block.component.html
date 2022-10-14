@@ -1,0 +1,30 @@
+<div>
+    <ng-template #branding class="branding">
+        <app-logo class="d-flex justify-content-center"></app-logo>
+    </ng-template>
+    <div *ngIf="SelectedUserChat != undefined else branding" class="d-flex flex-column row m-1">
+        <div class="banner1 row m-0">
+            <div class="col-1 p-2">
+                <img style="height: 50px; border-radius: 50%;" src="../../../assets/images/chattinLogo.jpg" alt=""
+                    srcset="">
+            </div>
+            <div class="col-9 align-self-center">
+                <h6>{{SelectedUserChat.username}}</h6>
+            </div>
+        </div>
+        <div  class="chatContainer p-3 m-0">
+            <div *ngFor="let text of chat">
+                <app-left *ngIf="text.id == 1" [Text]="text"></app-left>
+                <app-right *ngIf="text.id == 0" [Text]="text"></app-right>
+            </div>
+        </div>
+        <div class="SenderContainer row gx-0 mt-2">
+            <div class="form-group col-11">
+                <input type="text" [(ngModel)]="message" class="form-control" id="sendmessage" (keyup.enter)="sendmessage()" placeholder="type a message">
+            </div>
+            <div class="col-1">
+                <input class="btn" (click)="sendmessage()"  type="button" value="send">
+            </div>
+        </div>
+    </div>
+</div>

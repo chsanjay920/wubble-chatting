@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-between row gx-1 innerContainer">
+  <!-- <button (click)="emitEvent()">click</button> -->
+    <div class="col-md-3 col-sm-3 leftContainer" style="border: 2px solid #e44386;" >
+      <app-left-block (selectedUserEvent)="userSelected($event)" [Friends]="UsersList" ></app-left-block>
+    </div>
+    <div class="col-md-6  col-sm-6 midContainer" style="border: 2px solid #e44386;">
+      <app-mid-block [SelectedUserChat]="SelectedClient" ></app-mid-block>
+    </div> 
+    <div class="col-md-3 col-sm-3 rightContainer" style="border: 2px solid #e44386;">
+      <app-right-block [UsersLogsInfo]="UserLogs"></app-right-block>
+    </div>
+</div>

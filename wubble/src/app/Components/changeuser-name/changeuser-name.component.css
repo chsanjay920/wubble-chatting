@@ -1,0 +1,11 @@
+.username{
+    padding-top: 1vh;
+    font-size: medium;
+    font-weight: bold;
+    color: #e75f99;
+}
+
+.usernamechange:focus {
+    border-color: #ee98c1;
+    box-shadow: 0 0 0 0.2rem #e75f99;
+} 

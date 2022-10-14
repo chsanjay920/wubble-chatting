@@ -1,0 +1,15 @@
+.friendChat{
+    display: flex;
+    justify-content: left;
+}
+.chat{
+    border: 3px solid #e44386;
+    padding: 5px 6px;
+    background-color: #ee98c2a9;
+    border-radius: 10px;
+}
+.time{
+    font-size: xx-small;
+     color:rgb(71, 71, 71); 
+     text-align: right;margin: 0;
+  }

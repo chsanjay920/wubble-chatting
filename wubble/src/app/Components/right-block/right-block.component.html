@@ -1,0 +1,13 @@
+<div class="">
+    <app-logo class="logoClass"></app-logo>
+    <app-changeuser-name></app-changeuser-name>
+    <div class="container logs d-flex flex-column px-3 mt-3">
+        <div [ngStyle]="{'border':'3px solid #e44386','background-color':'#ea7bad','color':'white'}"
+            class="row logHeader p-2">
+            logs
+        </div>
+        <div *ngFor="let log of UsersLogsInfo" class="row my-0">
+            {{log.log}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="d-flex flex-column p-0 left-main-div">
+    <div class="header m-3">
+        Wubble
+    </div>
+    <app-search class="searchbox"></app-search>
+    <div class="flex-column gy-0 listOFUsers">
+        <div class="user m-1" *ngFor="let user of Friends" (click)="SelectedUser(user)">
+            <div class="text-center row pt-3 pb-1 g-0">
+                <h3>{{user.username}}</h3>
+            </div>
+            <div class="text-center row g-0">
+                <p>new message</p>
+            </div>
+        </div>
+    </div>
+</div>
