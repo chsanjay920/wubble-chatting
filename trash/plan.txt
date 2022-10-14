@@ -1,0 +1,61 @@
+user list
+-contains all available users.
+
+chat 
+-contains messages
+
+logs
+- it should contains online or ofline information regarding all users
+
+               
+server
+-contains users collections
+-emits logs of all clients to all clients
+-emits message to client to client (need to figure out)
+
+
+    client1 
+-gets a user object contains profile detailes
+    ✔️ ->check in loacal storage of available get it or creat and stores that profile in local storage
+    ✔️ ->Generating Random name using json data.
+-get all the available 
+    users objects
+    (initially no one in the room)
+-sends message to
+    other clients
+-receives messages
+    by other clients
+-displays logs of 
+    all users
+
+client2 joins
+-gets a user object
+    contains profile
+-stores that name in 
+    local storage
+-get all the available 
+    users objects
+    (room contains client1)
+-sends message to
+    other clients
+-receives messages
+    by other clients
+-displays logs of 
+    all users
+
+important links:
+https://www.edureka.co/community/67618/how-can-i-send-a-message-to-a-particular-client-with-socket-io#:~:text=You%20can%20try%20the%20code,will%20be%20generated%20including%20ID.
+
+
+time line
+
+for interface
+    27th september 2022 09:00PM to 01:45AM
+    28th september 2022 02:00AM to 05:00AM
+
+for research
+
+
+
+
+
